@@ -1,1 +1,3 @@
-# ha-dark-red
+# Red theme
+
+Cool theme for HACS! 
