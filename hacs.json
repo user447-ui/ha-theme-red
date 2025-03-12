@@ -1,3 +1,5 @@
 {
-  "name": "Red theme [user447-ui]"
+  "name": "Red theme",
+  "content_in_root": false, 
+  "render_readme": true
 }
