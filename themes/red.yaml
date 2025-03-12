@@ -1,0 +1,29 @@
+Red:
+  modes:
+    dark:
+    # color
+      primary-background-color: rgb(17, 17, 17)
+      primary-color: var(--error-color)
+      card-background-color: "#1c1c1c"
+      material-primary-color: "#007acc"
+      primary-text-color: "#e1e1e1"
+     # sidebar
+      sidebar-icon-color: rgba(var(--rgb-primary-text-color), 0.6)
+      scrollbar-thumb-color: rgb(194, 194, 194)
+     # switch
+      switch-checked-color: var(--primary-color);
+      switch-checked-button-color: var(--switch-checked-color, var(--primary-background-color))
+      switch-checked-track-color: var(--switch-checked-color, #000000)
+      switch-unchecked-button-color: "#999999"
+      switch-unchecked-track-color: "#9b9b9b"
+     # mdc
+      mdc-theme-primary: var(--primary-color);
+      mdc-theme-secondary: var(--accent-color);
+      mdc-theme-background: "#111111"
+      mdc-theme-surface: var(--card-background-color);
+      mdc-theme-on-primary: var(--text-primary-color);
+      mdc-theme-on-secondary: var(--text-primary-color);
+      mdc-theme-on-surface: "#1c1c1c"
+    light:
+    # color
+      primary-color: var(--error-color)
