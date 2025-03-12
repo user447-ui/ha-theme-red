@@ -1,5 +1,7 @@
 {
-  "name": "Red theme",
-  "content_in_root": false, 
-  "render_readme": true
+  "name": "Red Theme",
+  "description": "A custom red theme for Home Assistant", 
+  "homeassistant": "2024.1.0",
+  "domains": ["theme"],
+  "iot_class": "local_push"
 }
