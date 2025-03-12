@@ -1,6 +1,3 @@
 {
-  "name": "Red theme",
-  "description": "Cool red theme",
-  "homeassistant": "2023.1.0",
-  "render_readme": true
+  "name": "Red theme"
 }
