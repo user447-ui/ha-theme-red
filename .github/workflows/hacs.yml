@@ -9,10 +9,10 @@ inputs:
     required: false
     default: ""
   category:
-    description: "theme"
+    description: "The category of repository"
     required: true
   repository:
-    description: "user447-ui/red-theme"
+    description: "The full name of repository"
     required: false
   comment:
     description: "Post a comment to the PR with the result of the checks"
