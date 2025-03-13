@@ -17,12 +17,13 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const result = await github.repos.update({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            description: "Cool standart red theme",
-            topics: ["homeassistant", "redtheme", "ui"]
+          const { owner, repo } = context.repo;
+          const response = await github.repos.update({
+            owner: owner,
+            repo: repo,
+            description: "Cool standart theme for ha",
+            topics: ["homeassistant", "theme", "red"]
           });
-          console.log(result);
+          console.log(response);
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
