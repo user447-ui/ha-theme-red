@@ -21,7 +21,7 @@ jobs:
             owner: context.repo.owner,
             repo: context.repo.repo,
             description: "Cool standart red theme",
-            topics: ["homeassistant", "red theme", "ui"]
+            topics: ["homeassistant", "redtheme", "ui"]
           });
           console.log(result);
       env:
