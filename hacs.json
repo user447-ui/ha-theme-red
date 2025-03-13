@@ -1,6 +1,5 @@
 {
   "name": "Red theme",
-  "description": "Standart red theme",
   "type": "theme",
   "domains": ["lovelace", "frontend"],
   "render_readme": true
