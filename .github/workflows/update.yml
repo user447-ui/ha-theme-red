@@ -1,19 +1,28 @@
 name: Update Description and Topics
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   update-repo:
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
 
     - name: Set repository description and topics
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const result = await github.repos.update({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            description: "Cool standart red theme",
+            topics: ["homeassistant", "red theme", "ui"]
+          });
+          console.log(result);
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        curl -X PATCH -H "Authorization: token $GITHUB_TOKEN" \
-          -H "Accept: application/vnd.github.v3+json" \
-          https://api.github.com/repos/${{ github.repository }} \
-          -d '{"description": "Cool standard red theme", "topics": ["home-asistant", "hacs", "theme"]}'
